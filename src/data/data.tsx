@@ -14,17 +14,6 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -69,30 +58,34 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Firman I.S.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        <strong className="text-stone-100">Average-Sociable Tech-Nerd</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Interested in any tech-engineering related topic, eg <strong className="text-stone-100">hi-lo level programming, full-stack developing,
+        embedded programming, mechanical robotic, game development etc.</strong>.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Preference for research in <strong className="text-stone-100">medical technology</strong>, especially <strong className="text-stone-100">low level embedded programming in signal processing,
+        medical based human-machine/computer interface, and human robotics (e.g. arm prosthetic)</strong>.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Experienced in <strong className="text-stone-100">Business and System Analysis (e.g. Information System, Mobile Application, ERP), Software Engineering and Data Science (Typescript, C++, C#, Python, Matlab),
+        Quality Assurance Analysis and Engineering (Selenium, Cypress), and Project Management (Agile)</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://fthecatrock.notion.site/',
       text: 'Resume',
       primary: true,
-      Icon: DownloadIcon,
     },
     {
-      href: `#${SectionId.Contact}`,
+      href: `mailto:firmanisma@pens.ac.id`,
       text: 'Contact',
       primary: false,
     },
@@ -191,77 +184,6 @@ export const skills: SkillGroup[] = [
   },
 ];
 
-/**
- * Portfolio section
- */
-export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
-  },
-];
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
@@ -365,9 +287,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/firmanserdana'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://sinta.kemdikbud.go.id/authors/profile/6790378'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/firmaniserdana/'},
 ];
